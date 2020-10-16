@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/banner2"
+    tools:context=".PatientDetailActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:layout_marginTop="12dp"
+                android:text="--- Pill List"
+                android:textColor="@color/white"
+                android:textSize="32sp"/>
+        </RelativeLayout>
+
+        <GridLayout
+            android:columnCount="1"
+            android:rowCount="3"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/pill1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="30dp"
+                android:layout_margin="12dp"
+                app:cardUseCompatPadding="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="left"
+                    android:background="@drawable/cardbg2"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/pill1_Info1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:text="Pill #1 is empty."
+                        android:fontFamily="@font/bold"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+                    <TextView
+                        android:id="@+id/pill1_Info2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Take hours: ---"
+                        android:fontFamily="@font/light"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/pill1_Info3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quantity Per Hour: ---"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/light"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardPlus1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="30dp"
+                android:layout_margin="12dp"
+                app:cardUseCompatPadding="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="left"
+                    android:background="@drawable/cardbg2"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/pill2_Info1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:text="Pill #2 is empty."
+                        android:fontFamily="@font/bold"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+                    <TextView
+                        android:id="@+id/pill2_Info2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Take hours: ---"
+                        android:fontFamily="@font/light"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/pill2_Info3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quantity Per Hour: ---"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/light"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardPlus2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="30dp"
+                android:layout_margin="12dp"
+                app:cardUseCompatPadding="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="left"
+                    android:background="@drawable/cardbg2"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/pill3_Info1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:text="Pill #3 is empty."
+                        android:fontFamily="@font/bold"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+                    <TextView
+                        android:id="@+id/pill3_Info2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Take hours: ---"
+                        android:fontFamily="@font/light"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/pill3_Info3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quantity Per Hour: ---"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/light"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:src="@drawable/ic_delete_black_24dp"
+                app:fabSize="normal"
+                android:backgroundTint="@color/gray"
+                android:elevation="16dp"
+                app:borderWidth="0dp"
+                android:layout_gravity="left"
+                android:id="@+id/deleteFab1"/>
+
+            <TextView
+                android:id="@+id/patientNo"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:borderWidth="0dp"
+                android:src="@drawable/ic_edit_black_24dp"
+                app:fabSize="normal"
+                android:layout_gravity="right"
+                android:backgroundTint="@color/gray"
+                android:elevation="16dp"
+                android:id="@+id/editFab1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
